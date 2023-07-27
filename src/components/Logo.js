@@ -1,5 +1,3 @@
-import logo from "../images/logo-green.svg";
-
 const Logo = ({ name, fill }) => {
   return (
     <svg

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import Logo from "./Logo";
 import styled from "styled-components";
