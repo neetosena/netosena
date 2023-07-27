@@ -37,6 +37,7 @@ const Wrapper = styled.div`
   .inner-container {
     display: flex;
     min-height: calc(100vh - 6em);
+    padding-top: 6em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -107,6 +108,7 @@ const Wrapper = styled.div`
     height: calc(100vh - 3em);
 
     .inner-container {
+      padding-top: 0;
       padding-right: 31em;
       display: flex;
       align-items: center;

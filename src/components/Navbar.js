@@ -52,6 +52,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-50}
                 duration={500}
+                onClick={() => setShowMenu(!showMenu)}
               >
                 About
               </Link>
@@ -64,6 +65,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-50}
                 duration={500}
+                onClick={() => setShowMenu(!showMenu)}
               >
                 Skills
               </Link>
@@ -76,6 +78,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-50}
                 duration={500}
+                onClick={() => setShowMenu(!showMenu)}
               >
                 Portfolio
               </Link>
@@ -89,6 +92,7 @@ const Navbar = () => {
             smooth={true}
             offset={-50}
             duration={500}
+            onClick={() => setShowMenu(!showMenu)}
           >
             Contact
           </Link>
@@ -106,7 +110,7 @@ const Navbar = () => {
           type="button"
           onClick={() => setShowMenu(!showMenu)}
         >
-          <IoIosClose className="menu-humburguer" />
+          <IoIosClose className="menu-humburguer menu-close" />
         </button>
       </div>
     </Wrapper>
@@ -132,7 +136,7 @@ const Wrapper = styled.nav`
     padding: 6em 0;
 
     .logo {
-      fill: var(--green);
+      fill: var(--green) !important;
       width: 5em;
       height: auto;
     }
@@ -169,6 +173,15 @@ const Wrapper = styled.nav`
     color: var(--white);
   }
 
+  .menu-close {
+    color: var(--green) !important;
+  }
+
+  .menu-close:hover,
+  .menu-close:focus {
+    color: var(--white) !important;
+  }
+
   .menu-items {
     position: absolute;
     width: 100%;
@@ -202,6 +215,19 @@ const Wrapper = styled.nav`
 
   .open-menu {
     transform: translateX(0);
+  }
+
+  .open-menu .btn {
+    color: var(--white) !important;
+    border: 1px solid var(--white) !important;
+  }
+
+  .open-menu ul li a {
+    color: var(--white) !important;
+  }
+
+  .open-menu ul li a:hover {
+    color: var(--green) !important;
   }
 
   .close {
