@@ -34,7 +34,8 @@ const Skills = () => {
             integration of design into web projects.
           </p>
           <p>
-            Visit my <a href="#">Linkedin </a>for more details.
+            Visit my <a href="https://github.com/neetosena">Linkedin </a>for
+            more details.
           </p>
         </div>
         <div className="languages">
