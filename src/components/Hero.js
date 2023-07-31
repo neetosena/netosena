@@ -144,6 +144,21 @@ const Wrapper = styled.div`
       max-width: 950px;
     }
   }
+
+  @media (min-width: 1700px) {
+    .inner-container {
+      max-width: 1100px;
+      padding-right: 0;
+    }
+
+    .info {
+      padding-right: 30em;
+    }
+
+    .hero-img {
+      right: 15%;
+    }
+  }
 `;
 
 export default Hero;

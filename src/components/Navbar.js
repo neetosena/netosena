@@ -85,7 +85,6 @@ const Navbar = () => {
             </li>
           </ul>
           <Link
-            activeClass="active-link"
             className="btn"
             to="contact"
             spy={true}
@@ -218,12 +217,17 @@ const Wrapper = styled.nav`
   }
 
   .open-menu .btn {
-    color: var(--white) !important;
-    border: 1px solid var(--white) !important;
+    color: var(--white);
+    border: 1px solid var(--white);
+  }
+
+  .open-menu .btn:hover {
+    color: white !important;
+    border: 1px solid var(--green) !important;
   }
 
   .open-menu ul li a {
-    color: var(--white) !important;
+    color: var(--white);
   }
 
   .open-menu ul li a:hover {
@@ -329,6 +333,10 @@ const Wrapper = styled.nav`
       margin-top: 0;
       margin-left: 3em;
       padding: 0.7em 2.4em;
+    }
+    .menu-items .btn {
+      color: var(--white);
+      border: 1px solid var(--white);
     }
   }
 

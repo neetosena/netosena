@@ -74,17 +74,42 @@ code {
 }
 
 .background-nav-scroll li a {
-  color: var(--black) !important;
+  color: var(--white) !important;
 }
 
 .background-nav-scroll .btn {
-  color: var(--black) !important;
-  border: 1px solid var(--black) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--white) !important;
 }
 
 .background-nav-scroll .btn:hover,
 .background-nav-scroll .btn:focus {
-  color: var(--white) !important;
-  background: var(--black) !important;
-  border: 1px solid var(--black) !important;
+  color: white !important;
+  background: var(--green) !important;
+  border: 1px solid var(--green) !important;
+}
+
+@media (min-width: 768px) {
+  .background-nav-scroll li a {
+    color: var(--black) !important;
+  }
+
+  .background-nav-scroll .btn {
+    color: var(--black) !important;
+    border: 1px solid var(--black) !important;
+  }
+
+  .background-nav-scroll .btn,
+  .background-nav-scroll .btn {
+    color: var(--black) !important;
+    background: white !important;
+    border: 1px solid var(--black) !important;
+  }
+
+  .background-nav-scroll .btn:hover,
+  .background-nav-scroll .btn:focus {
+    color: var(--white) !important;
+    background: var(--black) !important;
+    border: 1px solid var(--black) !important;
+  }
 }
