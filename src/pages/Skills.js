@@ -12,7 +12,7 @@ const Skills = () => {
 
   useEffect(() => {
     scrollToSection(location);
-  }, [location]);
+  }, [location, scrollToSection]);
 
   return (
     <Wrapper>

@@ -15,7 +15,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     scrollToSection(location);
-  }, [location]);
+  }, [location, scrollToSection]);
 
   return (
     <Wrapper>

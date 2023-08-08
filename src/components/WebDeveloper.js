@@ -1,13 +1,10 @@
-import { useState } from "react";
 import styled from "styled-components";
 import websites from "../utils/websites";
 
 const WebDeveloper = () => {
-  const [webSites, setWebsites] = useState(websites);
-
   return (
     <Wrapper>
-      {webSites.map(
+      {websites.map(
         ({ id, name, img, logo, info, built, link, background }) => {
           let even = false;
           if (id % 2 === 0) {
