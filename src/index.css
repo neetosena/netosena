@@ -57,6 +57,20 @@ code {
   border: 1px solid var(--green) !important;
 }
 
+/* change the scheme color of the navbar */
+.white {
+  background: white !important;
+}
+
+.white ul li a {
+  color: var(--black) !important;
+}
+
+.white .btn {
+  color: var(--black) !important;
+  border: 1px solid var(--black) !important;
+}
+
 .background-nav-scroll {
   -webkit-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 45px 0px rgba(0, 0, 0, 0.75);

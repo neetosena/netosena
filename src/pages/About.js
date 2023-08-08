@@ -1,9 +1,19 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
+import { useGlobalContext } from "../components/context";
 import photo from "../images/photo-neto-2.png";
 import bullets from "../images/bullets.svg";
 
 const About = () => {
+  const { scrollToSection } = useGlobalContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    scrollToSection(location);
+  }, [location]);
+
   return (
     <Wrapper>
       <div className="inner-container" id="about">

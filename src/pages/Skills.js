@@ -1,9 +1,19 @@
+import { useEffect } from "react";
 import styled from "styled-components";
+import { useGlobalContext } from "../components/context";
+import { useLocation } from "react-router-dom";
 
 import skillsLinks from "../utils/skillsIcons";
 import bullets from "../images/bullets-2.svg";
 
 const Skills = () => {
+  const { scrollToSection } = useGlobalContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    scrollToSection(location);
+  }, [location]);
+
   return (
     <Wrapper>
       <div className="inner-container" id="skills">
@@ -39,9 +49,9 @@ const Skills = () => {
           </p>
         </div>
         <div className="languages">
-          {skillsLinks.map((link, { id }) => {
+          {skillsLinks.map((link) => {
             return (
-              <div key={id} className="icon-container">
+              <div key={link.id} className="icon-container">
                 <img src={link.icon} alt={link.text} />
                 <span>{link.text}</span>
               </div>

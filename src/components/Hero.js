@@ -3,7 +3,7 @@ import hero from "../images/hero.jpg";
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <div className="inner-container">
         <div className="info">
           <div className="name">

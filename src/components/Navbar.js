@@ -1,18 +1,30 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import styled from "styled-components";
+import { useGlobalContext } from "./context";
 
 import logoMobile from "../images/logo-background-mobile.svg";
-
-import { useState, useEffect } from "react";
 
 import { BiMenu } from "react-icons/bi";
 import { IoIosClose } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar = ({ colorScheme }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [changeNavColor, setChangeNavColor] = useState(false);
+
+  const { aboutRef, skillRef, portfolioRef, contactRef } = useGlobalContext();
+
+  // const navigate = useNavigate();
+
+  const scrollToSection = (elementRef) => {
+    // navigate(`/${elementRef.current.id}`);
+    console.log(elementRef.current.id);
+    // window.scrollTo({
+    //   top: elementRef.current.offsetTop,
+    //   behavior: "smooth",
+    // });
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -27,12 +39,16 @@ const Navbar = () => {
   return (
     <Wrapper
       className={
-        changeNavColor ? "background-nav-scroll" : "background-nav-no-scroll"
+        changeNavColor
+          ? "background-nav-scroll"
+          : `${colorScheme} background-nav-no-scroll`
       }
     >
       <div className="inner-wrapper">
         <div>
-          <Logo name="logo" fill="current" />
+          <NavLink to="/">
+            <Logo name="logo" fill="current" />
+          </NavLink>
         </div>
         <div className={!showMenu ? "menu-items" : "menu-items open-menu"}>
           <img
@@ -41,60 +57,56 @@ const Navbar = () => {
             alt="Neto Sena"
           />
           <div className="logo-container">
-            <Logo name="logo" fill="current" />
+            <NavLink
+              to="/"
+              onClick={() => {
+                setShowMenu(!showMenu);
+              }}
+            >
+              <Logo name="logo" fill="current" />
+            </NavLink>
           </div>
           <ul>
             <li>
-              <Link
-                activeClass="active-link"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setShowMenu(!showMenu)}
+              <NavLink
+                to="/#about"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                activeClass="active-link"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setShowMenu(!showMenu)}
+              <NavLink
+                to="/#skills"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
               >
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                activeClass="active-link"
-                to="portfolio"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setShowMenu(!showMenu)}
+              <NavLink
+                to="/#portfolio"
+                onClick={() => {
+                  setShowMenu(!showMenu);
+                }}
               >
                 Portfolio
-              </Link>
+              </NavLink>
             </li>
           </ul>
-          <Link
+          <NavLink
+            to="/#contact"
             className="btn"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            onClick={() => setShowMenu(!showMenu)}
+            onClick={() => {
+              setShowMenu(!showMenu);
+            }}
           >
             Contact
-          </Link>
+          </NavLink>
         </div>
 
         <button
@@ -244,7 +256,7 @@ const Wrapper = styled.nav`
   }
 
   ul li .active {
-    color: var(--green);
+    /* color: var(--green); */
   }
 
   li {

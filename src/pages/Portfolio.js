@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useGlobalContext } from "../components/context";
 
 import bullets from "../images/bullets.svg";
 
@@ -8,6 +10,13 @@ import WebDeveloperIcon from "../components/WebDeveloperIcon";
 import PythonAutomationIcon from "../components/PythonAutomationIcon";
 
 const Portfolio = () => {
+  const { scrollToSection } = useGlobalContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    scrollToSection(location);
+  }, [location]);
+
   return (
     <Wrapper>
       <div className="inner-container" id="portfolio">
@@ -18,7 +27,7 @@ const Portfolio = () => {
             <GraphicDesignIcon name="icon" fill="current" />
             <span>Graphic Design</span>
           </Link>
-          <Link className="card" to="#">
+          <Link className="card" to="/web">
             <WebDeveloperIcon name="icon" fill="current" />
             <span>Web Developer</span>
           </Link>
@@ -64,7 +73,7 @@ const Wrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 
   h1::after {
@@ -152,9 +161,13 @@ const Wrapper = styled.div`
 
   @media (min-width: 1154px) {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 
     .inner-container {
+      align-self: center;
       max-width: 900px;
+      width: 100%;
     }
     .bullets {
       width: 70%;
