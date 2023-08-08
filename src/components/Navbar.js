@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 import styled from "styled-components";
-import { useGlobalContext } from "./context";
+// import { useGlobalContext } from "./context";
 
 import logoMobile from "../images/logo-background-mobile.svg";
 
@@ -13,18 +13,18 @@ const Navbar = ({ colorScheme }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [changeNavColor, setChangeNavColor] = useState(false);
 
-  const { aboutRef, skillRef, portfolioRef, contactRef } = useGlobalContext();
+  // const { aboutRef, skillRef, portfolioRef, contactRef } = useGlobalContext();
 
   // const navigate = useNavigate();
 
-  const scrollToSection = (elementRef) => {
-    // navigate(`/${elementRef.current.id}`);
-    console.log(elementRef.current.id);
-    // window.scrollTo({
-    //   top: elementRef.current.offsetTop,
-    //   behavior: "smooth",
-    // });
-  };
+  // const scrollToSection = (elementRef) => {
+  //   // navigate(`/${elementRef.current.id}`);
+  //   console.log(elementRef.current.id);
+  //   // window.scrollTo({
+  //   //   top: elementRef.current.offsetTop,
+  //   //   behavior: "smooth",
+  //   // });
+  // };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {

@@ -12,7 +12,7 @@ const Contact = () => {
 
   useEffect(() => {
     scrollToSection(location);
-  }, [location]);
+  }, [location, scrollToSection]);
 
   return (
     <Wrapper>
