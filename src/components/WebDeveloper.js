@@ -13,8 +13,8 @@ const WebDeveloper = () => {
             even = false;
           }
           return (
-            <div className="inner-container">
-              <div key={id} className="site">
+            <div className="inner-container" key={id}>
+              <div className="site">
                 <img className="img" src={img} alt={name} />
                 <div
                   className={even ? "logo-container" : "logo-container-odd"}

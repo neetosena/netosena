@@ -5,5 +5,6 @@ import Skills from "./Skills";
 import Web from "./Web";
 import Contact from "./Contact";
 import Test from "./Test";
+import PythonAutomation from "./PythonAutomation";
 
-export { Home, About, Portfolio, Skills, Web, Contact, Test };
+export { Home, About, Portfolio, Skills, Web, Contact, PythonAutomation, Test };

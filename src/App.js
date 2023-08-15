@@ -1,6 +1,15 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, About, Skills, Portfolio, Web, Contact, Test } from "./pages";
+import {
+  Home,
+  About,
+  Skills,
+  Portfolio,
+  Web,
+  Contact,
+  PythonAutomation,
+  Test,
+} from "./pages";
 
 function App() {
   return (
@@ -13,6 +22,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="web" element={<Web />} />
+        <Route path="pythonautomation" element={<PythonAutomation />} />
         <Route path="test" element={<Test />} />
       </Routes>
     </BrowserRouter>
