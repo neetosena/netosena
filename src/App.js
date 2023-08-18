@@ -9,6 +9,7 @@ import {
   Contact,
   PythonAutomation,
   Test,
+  GraphicDesign,
 } from "./pages";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="web" element={<Web />} />
         <Route path="pythonautomation" element={<PythonAutomation />} />
         <Route path="test" element={<Test />} />
+        <Route path="graphic-design" element={<GraphicDesign />} />
       </Routes>
     </BrowserRouter>
   );
