@@ -1,8 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
+  const [index, setIndex] = useState(0);
+  const [showSlide, setShowSlide] = useState(false);
+
   const scrollToSection = (location) => {
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
@@ -15,7 +18,9 @@ const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ scrollToSection }}>
+    <AppContext.Provider
+      value={{ scrollToSection, index, setIndex, showSlide, setShowSlide }}
+    >
       {children}
     </AppContext.Provider>
   );

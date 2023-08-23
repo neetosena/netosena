@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import SlideShow from "../components/SlideShow";
 // import { Link } from "react-router-dom";
 
 const Test = () => {
@@ -17,7 +18,8 @@ const Test = () => {
 
   return (
     <div>
-      <nav style={{ position: "fixed" }}>
+      <SlideShow />
+      {/* <nav style={{ position: "fixed" }}>
         <button type="button" onClick={() => scrollToSection(aboutRef)}>
           About
         </button>
@@ -71,7 +73,7 @@ const Test = () => {
         }}
       >
         Contact
-      </div>
+      </div> */}
     </div>
   );
 };

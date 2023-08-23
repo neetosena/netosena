@@ -1,8 +1,18 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import gallery from "../utils/gallery";
+import SlideShow from "../components/SlideShow";
+import { IoIosClose } from "react-icons/io";
+import { useGlobalContext } from "../components/context";
 
 const GraphicDesign = () => {
+  const { setIndex, showSlide, setShowSlide } = useGlobalContext();
+
+  const handleClick = (i) => {
+    setIndex(i - 1);
+    setShowSlide(true);
+  };
+
   return (
     <Wrapper>
       <Navbar colorScheme={"white"} />
@@ -10,12 +20,27 @@ const GraphicDesign = () => {
       <div className="inner-container">
         {gallery.map(({ id, name, image }) => {
           return (
-            <button className={name} key={id} type="button">
-              <img src={image} alt={name} />
+            <button
+              className={name}
+              key={id}
+              type="button"
+              onClick={() => handleClick(id)}
+            >
+              <img className="img-gallery" src={image} alt={name} />
             </button>
           );
         })}
       </div>
+      {showSlide && (
+        <div className="slideShow-container">
+          <IoIosClose
+            className="btn-close"
+            onClick={() => setShowSlide(false)}
+          />
+
+          <SlideShow className="slide-show" gallery={gallery} />
+        </div>
+      )}
     </Wrapper>
   );
 };
@@ -23,6 +48,7 @@ const GraphicDesign = () => {
 const Wrapper = styled.div`
   .inner-container {
     padding: 0 2em;
+    position: relative;
   }
 
   button {
@@ -37,15 +63,15 @@ const Wrapper = styled.div`
     cursor: pointer;
     overflow: hidden;
   }
-  img {
+  .img-gallery {
     display: block;
     max-width: 100%;
     border-radius: 1em;
     transition: all ease-in-out 0.5s;
   }
 
-  img:hover,
-  img:focus {
+  .img-gallery:hover,
+  .img-gallery:focus {
     transform: scale(1.1);
     opacity: 0.8;
   }
@@ -68,6 +94,32 @@ const Wrapper = styled.div`
     left: 0;
 
     border: 2px solid var(--green);
+  }
+
+  .slideShow-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+
+  .slideShow-container .btn-close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: color ease-in-out 0.2s;
+    z-index: 999;
+  }
+
+  .slideShow-container .btn-close:hover,
+  .slideShow-container .btn-close:focus {
+    color: var(--green);
   }
 
   @media (min-width: 768px) {
