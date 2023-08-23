@@ -13,6 +13,12 @@ const GraphicDesign = () => {
     setShowSlide(true);
   };
 
+  const closeSlideShow = (e) => {
+    if (e.target.tagName === "DIV") {
+      setShowSlide(false);
+    }
+  };
+
   return (
     <Wrapper>
       <Navbar colorScheme={"white"} />
@@ -32,7 +38,7 @@ const GraphicDesign = () => {
         })}
       </div>
       {showSlide && (
-        <div className="slideShow-container">
+        <div className="slideShow-container" onClick={(e) => closeSlideShow(e)}>
           <IoIosClose
             className="btn-close"
             onClick={() => setShowSlide(false)}

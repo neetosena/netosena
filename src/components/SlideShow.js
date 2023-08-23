@@ -63,8 +63,8 @@ const Wrapper = styled.div`
   .icon-left,
   .icon-right {
     position: absolute;
-    width: 5%;
-    height: 5%;
+    width: 7%;
+    height: 7%;
     top: 50%;
     padding: 0.3em;
     color: white;
@@ -82,11 +82,11 @@ const Wrapper = styled.div`
     color: var(--green);
   }
   .icon-left {
-    left: 1em;
+    left: 2em;
   }
 
   .icon-right {
-    right: 1em;
+    right: 2em;
   }
 
   @media (min-width: 768px) {
@@ -96,7 +96,24 @@ const Wrapper = styled.div`
 
     .icon-left,
     .icon-right {
-      font-size: 4rem;
+      width: 5%;
+      height: 5%;
+    }
+    .icon-left {
+      left: 4em;
+    }
+
+    .icon-right {
+      right: 4em;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .icon-left,
+    .icon-right {
+      width: 3%;
+      height: 3%;
+      font-size: 1rem;
     }
   }
 `;
