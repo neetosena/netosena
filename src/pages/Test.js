@@ -19,7 +19,7 @@ const Test = () => {
   return (
     <div>
       <SlideShow />
-      {/* <nav style={{ position: "fixed" }}>
+      <nav style={{ position: "fixed" }}>
         <button type="button" onClick={() => scrollToSection(aboutRef)}>
           About
         </button>
@@ -73,7 +73,7 @@ const Test = () => {
         }}
       >
         Contact
-      </div> */}
+      </div>
     </div>
   );
 };
