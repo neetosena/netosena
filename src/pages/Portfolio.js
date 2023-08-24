@@ -31,7 +31,7 @@ const Portfolio = () => {
             <WebDeveloperIcon name="icon" fill="current" />
             <span>Web Developer</span>
           </Link>
-          <Link className="card" to="/pythonautomation">
+          <Link className="card" to="/python-automation">
             <PythonAutomationIcon name="icon" fill="current" />
             <span>Python Automation</span>
           </Link>

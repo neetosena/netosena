@@ -22,7 +22,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
         <Route path="web" element={<Web />} />
-        <Route path="pythonautomation" element={<PythonAutomation />} />
+        <Route path="python-automation" element={<PythonAutomation />} />
         {/* <Route path="test" element={<Test />} /> */}
         <Route path="graphic-design" element={<GraphicDesign />} />
       </Routes>

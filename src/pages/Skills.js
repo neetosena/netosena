@@ -44,8 +44,9 @@ const Skills = () => {
             integration of design into web projects.
           </p>
           <p>
-            Visit my <a href="https://github.com/neetosena">Linkedin </a>for
-            more details.
+            <a href="https://www.linkedin.com/in/netosena/">
+              Visit my Linkedin for more details.
+            </a>
           </p>
         </div>
         <div className="languages">
@@ -83,6 +84,11 @@ const Wrapper = styled.div`
     top: 7em;
     width: 200%;
     left: 0;
+    z-index: 0;
+  }
+
+  .info {
+    z-index: 1;
   }
 
   h1 {
@@ -116,7 +122,7 @@ const Wrapper = styled.div`
 
   a:focus,
   a:hover {
-    color: var(--white);
+    color: white;
   }
 
   .languages {

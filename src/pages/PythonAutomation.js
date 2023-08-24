@@ -78,7 +78,7 @@ const PythonAutomation = () => {
         </p>
         <a
           className="link-code"
-          href="https://github.com/neetosena/number-recognition-final"
+          href="https://github.com/neetosena/number-recognition/"
         >
           View the code &gt;&gt;
         </a>
