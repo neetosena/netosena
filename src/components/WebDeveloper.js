@@ -35,7 +35,9 @@ const WebDeveloper = () => {
                     <span>Built with: </span>
                     {built}
                   </p>
-                  <a href={link}>View the website &gt;&gt;</a>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    View the website &gt;&gt;
+                  </a>
                 </div>
               </div>
             </div>

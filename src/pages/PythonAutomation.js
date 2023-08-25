@@ -79,6 +79,8 @@ const PythonAutomation = () => {
         <a
           className="link-code"
           href="https://github.com/neetosena/number-recognition/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           View the code &gt;&gt;
         </a>
@@ -140,6 +142,15 @@ const Wrapper = styled.div`
 
   p span {
     font-weight: 700;
+  }
+
+  a {
+    transition: color ease-in-out 0.2s;
+  }
+
+  a:hover,
+  a:focus {
+    color: white;
   }
 
   img {

@@ -44,7 +44,11 @@ const Skills = () => {
             integration of design into web projects.
           </p>
           <p>
-            <a href="https://www.linkedin.com/in/netosena/">
+            <a
+              href="https://www.linkedin.com/in/netosena/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit my Linkedin for more details.
             </a>
           </p>
