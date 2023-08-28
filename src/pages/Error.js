@@ -53,7 +53,7 @@ const Wrapper = styled.div`
     position: relative;
     margin: -0.15em 0;
     color: var(--green);
-    font-size: 11rem;
+    font-size: 8rem;
     font-weight: 900;
   }
   h1::after {
@@ -69,7 +69,7 @@ const Wrapper = styled.div`
   }
 
   img {
-    max-width: 80%;
+    max-width: 70%;
     margin-bottom: 3em;
   }
 
