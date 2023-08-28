@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import WebDeveloper from "../components/WebDeveloper";
 import styled from "styled-components";
@@ -10,6 +11,14 @@ const Web = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Neto Sena - Web Developer</title>
+        <meta
+          name="description"
+          content="Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences."
+        />
+      </Helmet>
       <Navbar colorScheme={"white"} />
       <h1>Web Developer</h1>
       <WebDeveloper />

@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Test from "./Test";
 import PythonAutomation from "./PythonAutomation";
 import GraphicDesign from "./GraphicDesign";
+import Error from "./Error";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   PythonAutomation,
   Test,
   GraphicDesign,
+  Error,
 };

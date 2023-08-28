@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import gallery from "../utils/gallery";
 import SlideShow from "../components/SlideShow";
@@ -21,6 +22,14 @@ const GraphicDesign = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Neto Sena - Graphic Design</title>
+        <meta
+          name="description"
+          content="Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences."
+        />
+      </Helmet>
       <Navbar colorScheme={"white"} />
       <h1>Graphic Design</h1>
       <div className="inner-container">

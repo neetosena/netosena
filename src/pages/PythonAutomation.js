@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 import Card1 from "../images/school-cards-finglas-12 1.jpg";
 import Card2 from "../images/school-cards-finglas-17 1.jpg";
@@ -13,6 +14,14 @@ const PythonAutomation = () => {
   }, []);
   return (
     <Wrapper>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Neto Sena - Python Automation</title>
+        <meta
+          name="description"
+          content="Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences."
+        />
+      </Helmet>
       <Navbar />
       <div className="inner-container">
         <h1>Python Automation</h1>
