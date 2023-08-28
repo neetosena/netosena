@@ -69,7 +69,7 @@ const Wrapper = styled.div`
   }
 
   img {
-    max-width: 50%;
+    max-width: 65%;
     margin-bottom: 3em;
   }
 
