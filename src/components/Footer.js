@@ -138,6 +138,7 @@ const Wrapper = styled.footer`
 
   .nav-links ul li a {
     color: var(--white);
+    font-size: 0.85rem;
   }
 
   @media (min-width: 768px) {
@@ -175,6 +176,10 @@ const Wrapper = styled.footer`
 
     .nav-links:last-of-type {
       align-self: end;
+    }
+
+    .nav-links ul li a {
+      font-size: 1rem;
     }
   }
 
