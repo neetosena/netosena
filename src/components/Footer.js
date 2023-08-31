@@ -76,7 +76,7 @@ const Wrapper = styled.footer`
   .img {
     display: block;
     margin: auto;
-    max-width: 200px;
+    max-width: 60%;
     margin-bottom: 4em;
   }
 
