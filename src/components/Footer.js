@@ -76,7 +76,7 @@ const Wrapper = styled.footer`
   .img {
     display: block;
     margin: auto;
-    max-width: 60%;
+    max-width: 180px;
     width: 100%;
     margin-bottom: 4em;
   }
@@ -160,6 +160,7 @@ const Wrapper = styled.footer`
 
     .img {
       margin: 0;
+      max-width: 200px;
       margin-bottom: 2em;
     }
 
