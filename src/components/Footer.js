@@ -15,7 +15,11 @@ const Footer = () => {
             <FiMail className="icon" />
             neetosena@gmail.com
           </a>
-          <a href="https://www.linkedin.com/in/netosena/">
+          <a
+            href="https://www.linkedin.com/in/netosena/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RxLinkedinLogo className="icon" />
             netosena
           </a>

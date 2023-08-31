@@ -19,7 +19,7 @@ const Error = () => {
       </Helmet>
       <Navbar colorScheme="white" />
       <div className="inner-container">
-        <img src={errorImage} alt="404" />
+        <img className="img-error" src={errorImage} alt="404" />
         <div className="info">
           <span className="text">
             <span>Oops....</span>looks like it’s
@@ -39,9 +39,10 @@ const Error = () => {
 };
 
 const Wrapper = styled.div`
-  display: flex;
+  /* display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   min-height: 100vh;
 
   .inner-container {
@@ -49,6 +50,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 80vh;
   }
 
   h1 {
@@ -70,7 +72,7 @@ const Wrapper = styled.div`
     z-index: -1;
   }
 
-  img {
+  .img-error {
     max-width: 65%;
     margin-bottom: 3em;
   }
@@ -107,6 +109,11 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     .inner-container {
       max-width: 768px;
       flex-direction: row;
@@ -116,7 +123,7 @@ const Wrapper = styled.div`
     .info {
     }
 
-    img {
+    .img-error {
       max-width: 100%;
       width: 50%;
       margin-bottom: 0;
