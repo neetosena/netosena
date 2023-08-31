@@ -77,6 +77,7 @@ const Wrapper = styled.footer`
     display: block;
     margin: auto;
     max-width: 60%;
+    width: 100%;
     margin-bottom: 4em;
   }
 
