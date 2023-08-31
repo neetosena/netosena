@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Navbar from "../components/Navbar";
 import errorImage from "../images/404.png";
+import Footer from "../components/Footer";
 
 const Error = () => {
   return (
@@ -32,6 +33,7 @@ const Error = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </Wrapper>
   );
 };

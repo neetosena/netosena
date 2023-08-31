@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "../components/Navbar";
 import WebDeveloper from "../components/WebDeveloper";
 import styled from "styled-components";
+import Footer from "../components/Footer";
 
 const Web = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Web = () => {
       <Navbar colorScheme={"white"} />
       <h1>Web Developer</h1>
       <WebDeveloper />
+      <Footer />
     </Wrapper>
   );
 };

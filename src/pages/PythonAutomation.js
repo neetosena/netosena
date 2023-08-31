@@ -7,6 +7,7 @@ import Card2 from "../images/school-cards-finglas-17 1.jpg";
 import Card3 from "../images/school-cards-finglas-15 1.jpg";
 import PythonLogo from "../images/Python-logo-notext 1.svg";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const PythonAutomation = () => {
   useEffect(() => {
@@ -94,6 +95,7 @@ const PythonAutomation = () => {
           View the code &gt;&gt;
         </a>
       </div>
+      <Footer />
     </Wrapper>
   );
 };
@@ -101,6 +103,10 @@ const PythonAutomation = () => {
 const Wrapper = styled.div`
   background: var(--black);
   padding-bottom: 4em;
+
+  .inner-container {
+    padding-bottom: 4em;
+  }
 
   h1 {
     display: flex;

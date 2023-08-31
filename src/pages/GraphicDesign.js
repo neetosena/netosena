@@ -5,6 +5,8 @@ import gallery from "../utils/gallery";
 import SlideShow from "../components/SlideShow";
 import { IoIosClose } from "react-icons/io";
 import { useGlobalContext } from "../components/context";
+import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const GraphicDesign = () => {
   const { setIndex, showSlide, setShowSlide } = useGlobalContext();
@@ -19,6 +21,10 @@ const GraphicDesign = () => {
       setShowSlide(false);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <Wrapper>
@@ -56,6 +62,7 @@ const GraphicDesign = () => {
           <SlideShow className="slide-show" gallery={gallery} />
         </div>
       )}
+      <Footer />
     </Wrapper>
   );
 };
@@ -63,6 +70,7 @@ const GraphicDesign = () => {
 const Wrapper = styled.div`
   .inner-container {
     padding: 0 2em;
+    padding-bottom: 4em;
     position: relative;
   }
 
