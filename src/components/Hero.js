@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import hero from "../images/hero.jpg";
+import hero_2 from "../images/hero-animated.gif";
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero-img">
-          <img src={hero} alt="developer" />
+          <img src={hero_2} alt="developer" />
         </div>
       </div>
     </Wrapper>
