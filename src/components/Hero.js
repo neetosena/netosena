@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import hero from "../images/hero.jpg";
 import hero_2 from "../images/hero-animated.gif";
 
 const Hero = () => {
