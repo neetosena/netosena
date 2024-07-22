@@ -86,14 +86,14 @@ const PythonAutomation = () => {
         <p>
           <span>Built with: </span>Python
         </p>
-        <a
+        {/* <a
           className="link-code"
           href="https://github.com/neetosena/number-recognition/"
           target="_blank"
           rel="noopener noreferrer"
         >
           View the code &gt;&gt;
-        </a>
+        </a> */}
       </div>
       <Footer />
     </Wrapper>
