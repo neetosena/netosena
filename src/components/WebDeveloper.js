@@ -17,7 +17,9 @@ const WebDeveloper = () => {
               <div className="site">
                 <img className="img" src={img} alt={name} />
                 <div
-                  className={even ? "logo-container" : "logo-container-odd"}
+                  className={
+                    even ? "logo-container" : "logo-container-odd " + "odd" + id
+                  }
                   style={{ backgroundColor: background }}
                 >
                   <img
@@ -55,9 +57,14 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 
-  .inner-container:nth-of-type(even) {
+  .inner-container:nth-of-type(odd) {
     background: #f0f0f0;
   }
+
+  .inner-container:nth-of-type(1) {
+    background: white;
+  }
+
   .img {
     display: block;
     margin: auto;
@@ -136,6 +143,10 @@ const Wrapper = styled.div`
       min-height: 11em;
       top: 25%;
       right: 0;
+    }
+
+    .odd1 {
+      top: 17%;
     }
 
     .logo {

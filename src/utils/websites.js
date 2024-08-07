@@ -4,8 +4,10 @@ import aroundTheSquare from "../images/around-the-square.jpg";
 import trAcademy from "../images/tr-academy.jpg";
 import inLovingMemory from "../images/inlovingmemory.jpg";
 import schoolCards from "../images/school-cards.jpg";
+import epvStudio from "../images/evpstudio.jpg";
 
 import printreadyLogo from "../images/printready-logo.svg";
+import evpstudioLogo from "../images/logo-evpstudio.svg";
 import lyonsplumbingLogo from "../images/lyons-logo.svg";
 import aroundTheSquareLogo from "../images/around-the-square-logo 1.svg";
 import trAcademyLogo from "../images/tracademy-logo-3 1.svg";
@@ -15,6 +17,48 @@ import schoolCardsLogo from "../images/SchoolCards-logo 1.svg";
 const websites = [
   {
     id: 1,
+    name: "EVP Studio",
+    img: epvStudio,
+    logo: evpstudioLogo,
+    info: [
+      "EVP Studio is a sophisticated portfolio website developed using React, showcasing a comprehensive range of design and development projects. This modern and visually appealing site highlights the creativity and technical proficiency of EVP Studio, making it an ideal platform for attracting potential clients and collaborators.",
+    ],
+    built: [
+      <>
+        <strong>React:</strong> A powerful JavaScript library for building user
+        interfaces, enabling a highly responsive and dynamic user experience.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Styled Components:</strong> For writing component-level CSS,
+        allowing for a cleaner and more modular CSS codebase.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Contentful:</strong>Integrated headless CMS for managing and
+        delivering content with ease.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>React Router: </strong>Facilitates seamless navigation and
+        routing within the application.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Netlify: </strong>For hosting, continuous deployment, and
+        ensuring the site is performant and secure.
+        <br />
+      </>,
+    ],
+    link: "https://evpstudio.netlify.app/",
+    background: "#545252",
+  },
+  {
+    id: 2,
     name: "Print Ready",
     img: printReady,
     logo: printreadyLogo,
@@ -27,7 +71,7 @@ const websites = [
     background: "#203b78",
   },
   {
-    id: 2,
+    id: 3,
     name: "Lyons Plumbing and Heating",
     img: lyonsPlumbing,
     logo: lyonsplumbingLogo,
@@ -39,7 +83,7 @@ const websites = [
     background: "#FFFFFF",
   },
   {
-    id: 3,
+    id: 4,
     name: "Around The Square",
     img: aroundTheSquare,
     logo: aroundTheSquareLogo,
@@ -51,7 +95,7 @@ const websites = [
     background: "#1F1F1F",
   },
   {
-    id: 4,
+    id: 5,
     name: "TR Academy",
     img: trAcademy,
     logo: trAcademyLogo,
@@ -63,7 +107,7 @@ const websites = [
     background: "#1F1F1F",
   },
   {
-    id: 5,
+    id: 6,
     name: "In Loving Memory",
     img: inLovingMemory,
     logo: inLovingMemoryLogo,
@@ -75,7 +119,7 @@ const websites = [
     background: "#FFF0EF",
   },
   {
-    id: 6,
+    id: 7,
     name: "School Cards",
     img: schoolCards,
     logo: schoolCardsLogo,
