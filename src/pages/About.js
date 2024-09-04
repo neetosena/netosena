@@ -23,20 +23,52 @@ const About = () => {
 
         <div className="info">
           <p>
-            Professionally connected with the web development industry and
-            Graphic Designer industry.
+            As a Frontend Developer with five years of experience, I specialize
+            in creating exceptional customer experiences using technologies like
+            JavaScript, HTML, CSS, React, Gatsby, Node.js, and various APIs.
+          </p>
+
+          <p>
+            I have successfully developed and integrated solutions that boost
+            revenue, streamline operations, and enhance user satisfaction. Key
+            projects include a{" "}
+            <a href="https://printready.ie" target="_blank" rel="noreferrer">
+              Print Ready{" "}
+            </a>
+            website for Print Job’s platforms, which significantly increased
+            revenue, and customized backend products that led to a 20% sales
+            growth.
+          </p>
+
+          <p>
+            I’ve also spearheaded the development of websites like{" "}
+            <a href="https://schoolcards.ie" target="_blank" rel="noreferrer">
+              school Cards
+            </a>
+            , achieving an 80% increase in revenue, and engineered e-commerce
+            platforms such as{" "}
+            <a
+              href="https://aroundthesquare.ie"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Around The Square
+            </a>{" "}
+            for custom illustrations.
           </p>
           <p>
-            Problem solver, well-organised person, loyal employee with high
-            attention to detail.
+            My work extends to enhancing business online presence, as seen with{" "}
+            <a
+              href="https://lyonsplumbingandheating.ie/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lyons Plumbing and Heating
+            </a>
           </p>
           <p>
-            Fan of Dancing, outdoor activities, video games, and coding of
-            course.
-          </p>
-          <p>
-            Interested in the entire frontend spectrum and working on ambitious
-            projects with interesting people.
+            I am passionate about leveraging cutting-edge technology to deliver
+            impactful solutions that drive business growth.
           </p>
         </div>
       </div>
@@ -75,8 +107,17 @@ const Wrapper = styled.div`
     z-index: 1;
   }
 
-  .info p:nth-of-type(-1n + 2) {
-    font-weight: 700;
+  .info p:nth-of-type(1) {
+    font-weight: 600;
+  }
+
+  .info a {
+    color: var(--white);
+  }
+
+  .info a:hover,
+  .info a:focus {
+    color: var(--green);
   }
 
   @media (min-width: 768px) {

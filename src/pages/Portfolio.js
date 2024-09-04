@@ -23,10 +23,10 @@ const Portfolio = () => {
         <img className="bullets" src={bullets} alt="Bullets" />
         <h1>Portfolio & Previous Projects</h1>
         <div className="cards-container">
-          <Link className="card" to="/graphic-design">
+          {/* <Link className="card" to="/graphic-design">
             <GraphicDesignIcon name="icon" fill="current" />
             <span>Graphic Design</span>
-          </Link>
+          </Link> */}
           <Link className="card" to="/web">
             <WebDeveloperIcon name="icon" fill="current" />
             <span>Web Developer</span>

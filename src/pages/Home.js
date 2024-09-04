@@ -12,7 +12,7 @@ const Home = () => {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Neto Sena UI | UX and Web Developer</title>
+        <title>Neto Sena | Frontend Developer</title>
         <meta
           name="description"
           content="Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences."

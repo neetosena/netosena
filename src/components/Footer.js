@@ -40,9 +40,9 @@ const Footer = () => {
             <Link to="/#portfolio">Portfolio</Link>
           </p>
           <ul>
-            <li>
+            {/* <li>
               <Link to="/graphic-design">&#62; Graphic Design</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/web">&#62; Web Developer</Link>
             </li>
@@ -124,7 +124,7 @@ const Wrapper = styled.footer`
   }
 
   .nav-links p {
-    margin-bottom: 1.7em;
+    margin-bottom: 0.7em;
   }
 
   .nav-links p:nth-last-of-type(1) {

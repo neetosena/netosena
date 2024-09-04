@@ -11,9 +11,7 @@ const Hero = () => {
             <span className="subtitle">Sena</span>
             <span className="dot">.</span>
           </div>
-          <span className="description">
-            UI | UX Designer and Web Developer
-          </span>
+          <span className="description">Frontend Developer</span>
           <p>
             Resolving design problems, building smart user interfaces and useful
             interactions, developing rich web applications and seamless web
