@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import hero_2 from "../images/hero-animated.gif";
 
@@ -17,6 +18,7 @@ const Hero = () => {
             interactions, developing rich web applications and seamless web
             experiences.
           </p>
+          <Link to="/web">See More</Link>
         </div>
         <div className="hero-img">
           <img src={hero_2} alt="developer" />
@@ -35,10 +37,30 @@ const Wrapper = styled.div`
   .inner-container {
     display: flex;
     min-height: calc(100vh - 6em);
+
     padding-top: 6em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .info p {
+    margin-bottom: 2em;
+  }
+
+  .info a {
+    padding: 0.7em 2.4em;
+    border: 1px solid var(--white);
+    border-radius: 0.5rem;
+    color: var(--white);
+    transition: background ease-in-out 0.3s;
+  }
+
+  .info a:hover,
+  .info a:focus {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
   }
 
   .title {
@@ -71,6 +93,7 @@ const Wrapper = styled.div`
 
   .hero-img {
     display: flex;
+    margin-top: 2em;
     justify-content: center;
     width: 100%;
     overflow: hidden;
