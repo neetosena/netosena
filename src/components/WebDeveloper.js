@@ -5,7 +5,7 @@ const WebDeveloper = () => {
   return (
     <Wrapper>
       {websites.map(
-        ({ id, name, img, logo, info, built, link, background }) => {
+        ({ id, name, img, logo, info, built, link, background }, index) => {
           let even = false;
           if (id % 2 === 0) {
             even = true;
@@ -13,12 +13,14 @@ const WebDeveloper = () => {
             even = false;
           }
           return (
-            <div className="inner-container" key={id}>
+            <div className="inner-container" key={index}>
               <div className="site">
                 <img className="img" src={img} alt={name} />
                 <div
                   className={
-                    even ? "logo-container" : "logo-container-odd " + "odd" + id
+                    even
+                      ? "logo-container even" + id
+                      : "logo-container-odd odd" + id
                   }
                   style={{ backgroundColor: background }}
                 >
@@ -57,13 +59,13 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 
-  .inner-container:nth-of-type(odd) {
+  .inner-container:nth-of-type(even) {
     background: #f0f0f0;
   }
 
-  .inner-container:nth-of-type(1) {
+  /* .inner-container:nth-of-type(1) {
     background: white;
-  }
+  } */
 
   .img {
     display: block;
@@ -145,7 +147,8 @@ const Wrapper = styled.div`
       right: 0;
     }
 
-    .odd1 {
+    .odd1,
+    .even2 {
       top: 17%;
     }
 

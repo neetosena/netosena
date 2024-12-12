@@ -1,10 +1,11 @@
 import printReady from "../images/printready.jpg";
-import lyonsPlumbing from "../images/lyons.jpg";
+import lyonsPlumbing from "../images/lyons-plumbing-2.JPG";
 import aroundTheSquare from "../images/around-the-square.jpg";
-import trAcademy from "../images/tr-academy.jpg";
+import trAcademy from "../images/tr-academy-2.jpg";
 import inLovingMemory from "../images/inlovingmemory.jpg";
-import schoolCards from "../images/school-cards.jpg";
-import epvStudio from "../images/evpstudio.jpg";
+import schoolCards from "../images/school-cards-2.jpg";
+import epvStudio from "../images/evpstudio-2.jpg";
+import pamperParlour from "../images/pamper-parlour.jpg";
 
 import printreadyLogo from "../images/printready-logo.svg";
 import evpstudioLogo from "../images/logo-evpstudio.svg";
@@ -13,10 +14,60 @@ import aroundTheSquareLogo from "../images/around-the-square-logo 1.svg";
 import trAcademyLogo from "../images/tracademy-logo-3 1.svg";
 import inLovingMemoryLogo from "../images/Inlovingmemory Logo final3 1.svg";
 import schoolCardsLogo from "../images/SchoolCards-logo 1.svg";
+import pamperParlourLogo from "../images/logo_pamper_parlour.svg";
 
 const websites = [
   {
     id: 1,
+    name: "Pamper Parlour",
+    img: pamperParlour,
+    logo: pamperParlourLogo,
+    info: [
+      "Pamper Parlour is a vibrant and engaging single-page web application designed for a children’s pamper party service. Built to captivate visitors with its playful design and smooth performance, the site enhances the client’s online presence and boosts customer engagement through a visually appealing and user-friendly interface.",
+    ],
+    built: [
+      <>
+        <strong>React</strong> A robust JavaScript library for crafting dynamic
+        and interactive user interfaces, ensuring a seamless user experience.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Vite: </strong> A lightning-fast build tool and development
+        environment for faster builds and optimized production performance.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Tailwind CSS:</strong>A utility-first CSS framework that allowed
+        for responsive and aesthetically pleasing design with minimal effort.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Lazy Loading for Images: </strong>Implemented to enhance
+        performance by deferring the loading of off-screen images, ensuring
+        quick page load times.
+        <br />
+        <br />
+      </>,
+      <>
+        <strong>Netlify: </strong>Utilized for hosting, serverless form
+        handling, and continuous deployment, providing a secure and scalable
+        hosting solution.
+        <br />
+      </>,
+      <>
+        This thoughtfully crafted web app demonstrates expertise in modern web
+        development tools and techniques while meeting the client’s goals of
+        attracting and converting customers.
+      </>,
+    ],
+    link: "https://mypamperme.com/",
+    background: "#fce1e9",
+  },
+  {
+    id: 2,
     name: "EVP Studio",
     img: epvStudio,
     logo: evpstudioLogo,
@@ -58,7 +109,7 @@ const websites = [
     background: "#545252",
   },
   {
-    id: 2,
+    id: 3,
     name: "Print Ready",
     img: printReady,
     logo: printreadyLogo,
@@ -71,7 +122,7 @@ const websites = [
     background: "#203b78",
   },
   {
-    id: 3,
+    id: 4,
     name: "Lyons Plumbing and Heating",
     img: lyonsPlumbing,
     logo: lyonsplumbingLogo,
@@ -83,7 +134,7 @@ const websites = [
     background: "#FFFFFF",
   },
   {
-    id: 4,
+    id: 5,
     name: "Around The Square",
     img: aroundTheSquare,
     logo: aroundTheSquareLogo,
@@ -95,7 +146,7 @@ const websites = [
     background: "#1F1F1F",
   },
   {
-    id: 5,
+    id: 6,
     name: "TR Academy",
     img: trAcademy,
     logo: trAcademyLogo,
@@ -107,7 +158,7 @@ const websites = [
     background: "#1F1F1F",
   },
   {
-    id: 6,
+    id: 7,
     name: "In Loving Memory",
     img: inLovingMemory,
     logo: inLovingMemoryLogo,
@@ -119,7 +170,7 @@ const websites = [
     background: "#FFF0EF",
   },
   {
-    id: 7,
+    id: 8,
     name: "School Cards",
     img: schoolCards,
     logo: schoolCardsLogo,
